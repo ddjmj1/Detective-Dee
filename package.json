@@ -1,0 +1,46 @@
+{
+  "name": "dsh-shendi-bot",
+  "version": "1.2.0",
+  "description": "《神探狄仁杰》剧情问答与出题面板，支持 DSH 自有模型与机器人专用 OpenAI 兼容 API。",
+  "scripts": { "test": "node --test" },
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "detective-di",
+    "神探狄仁杰",
+    "quiz",
+    "novel"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "data/*.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# 神探狄仁杰机器人：左侧栏入口 + 剧情问答 / 出题面板。
+#
+# 素材目录默认自动探测：配置 dataDir → 环境变量 SHENDI_DATA_DIR →
+# <包目录>/data → <包目录>/../data。也可以用下面注释里的写法显式指定：
+#   config:
+#     dataDir: '/absolute/path/to/data'
+- insert:
+    - id: shendi-bot
+      name: 'dsh-shendi-bot'
+      config: {}
