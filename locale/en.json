@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Detective Di bot",
+    "description": "Open the sidebar panel for plot Q&A and quizzes grounded in local transcripts. Add your API in Settings → Models, then refresh and select it in the panel, or configure a bot-only OpenAI-compatible API. Questions and relevant excerpts go to the selected provider."
+  }
+}
